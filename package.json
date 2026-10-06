@@ -1,0 +1,13 @@
+{
+  "name": "samjhao",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Multilingual paperwork explanations and private action plans",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check server/index.js && node --check server/ai.js && node --check public/app.js"
+  }
+}
